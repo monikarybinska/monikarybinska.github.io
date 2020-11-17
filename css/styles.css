@@ -34,6 +34,25 @@ nav ul li {
   font-size: 14px;
 }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+@media (max-width: 360px) {
+  .navigation {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 645px) {
+  .navigation__list.empty {
+    margin: 0 calc(50% - 60px);
+  }
+}
+
 li.empty {
   width: 90px;
   border-top: 1px solid black;
@@ -50,12 +69,6 @@ nav li a:hover {
   text-decoration: underline;
 }
 
-nav ul {
-  margin: 0 auto;
-  text-align: center;
-  padding: 30px;
-}
-
 header {
   top: 70px;
   position: relative;
@@ -67,7 +80,7 @@ header {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: calc(60px + 2vw);
   line-height: 130%;
 }
 
@@ -103,6 +116,20 @@ p {
 .button:hover {
   background: #005a4e;
   color: white;
+}
+
+figure {
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .col-sm:first-child {
+    padding-right: 35px;
+  }
+
+  .col-sm:last-child {
+    padding-left: 35px;
+  }
 }
 
 figcaption {
@@ -143,8 +170,20 @@ footer {
 footer h2 {
   font-size: 30px;
   margin-bottom: 100px;
+
+}
+
+@media(max-width: 640px) {
+  .resetted-link {
+    overflow-wrap: break-word;
+  }
 }
 
 .right-alignment {
   text-align: right;
+}
+
+.resetted-link {
+  text-decoration: none;
+  color: inherit;
 }
