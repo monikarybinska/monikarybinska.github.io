@@ -46,6 +46,11 @@ nav ul li {
     padding: 20px;
   }
 }
+@media (max-width: 320px) {
+  .navigation {
+    padding: 10px 2px;
+  }
+}
 
 @media (max-width: 645px) {
   .navigation__list.empty {
@@ -82,6 +87,12 @@ header {
 h1 {
   font-size: calc(60px + 2vw);
   line-height: 130%;
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 h2 {
@@ -149,6 +160,13 @@ figcaption {
   margin-bottom: 130px;
 }
 
+@media (max-width: 360px) {
+  .skills-list{
+    font-size: 27px;
+    padding: 0 8px;
+  }
+}
+
 .project{
   margin: 30px 0;
   padding: 50px;
@@ -170,8 +188,26 @@ footer {
 footer h2 {
   font-size: 30px;
   margin-bottom: 100px;
-
 }
+
+@media (max-width: 576px) {
+  footer {
+    margin: 60px;
+  }
+  footer h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 360px) {
+  footer {
+    margin: 12px;
+  }
+  footer h2 {
+    font-size: 17px;
+  }
+}
+
 
 @media(max-width: 640px) {
   .resetted-link {
@@ -186,4 +222,17 @@ footer h2 {
 .resetted-link {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 576px) {
+  .add-linkedin {
+    max-width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .right-alignment + .col-sm figure {
+    margin-top: 3em;
+  }
 }
